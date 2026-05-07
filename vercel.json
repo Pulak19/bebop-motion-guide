@@ -1,4 +1,5 @@
 {
-  "buildCommand": "",
-  "outputDirectory": "."
+  "installCommand": "echo skip",
+  "buildCommand": "echo skip",
+  "outputDirectory": "public"
 }
