@@ -72,7 +72,7 @@
 
   body {
     font-family: 'Ginto', sans-serif;
-    background: var(--surface-default);
+    background: #F4F4F4;
     color: var(--fg-primary);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -190,12 +190,13 @@
 
   /* ─── Cards ─── */
   .card {
-    background: var(--surface-default);
+    background: #FFFFFF;
     border: none;
     border-radius: var(--radius-composite-medium);
     padding: 32px;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04), 0 2px 8px rgba(0,0,0,0.02);
   }
 
   .card-dark {
@@ -425,23 +426,23 @@
   </p>
 
   <div class="grid-3">
-    <div class="card card-black">
-      <div class="icon-container icon-container--on-dark">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 5h2v5.4l4 2.4-.9 1.5L11 13V7z" fill="white"/></svg>
+    <div class="card">
+      <div class="icon-container icon-container--soft">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M25.78 3.28a.75.75 0 00-1.06-1.06l-4.5 4.5a.75.75 0 000 1.06l1 1-2.94 2.94a7.5 7.5 0 101.06 1.06l2.94-2.94 1 1a.75.75 0 001.06 0l4.5-4.5a.75.75 0 00-1.06-1.06L24 9.06l-.94-.94zM14 21.5a6 6 0 110-12 6 6 0 010 12zm0-3.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" fill="var(--neutral-n26)"/></svg>
       </div>
       <h3>Purposeful</h3>
       <p>Every animation serves a function — guiding attention, showing cause &amp; effect, or maintaining spatial context.</p>
     </div>
     <div class="card">
-      <div class="icon-container icon-container--dark">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 12h3l2.5-7 4.5 14 2.5-7H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div class="icon-container icon-container--soft">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M6.5 8.75a.75.75 0 00-1.5 0v1.5A5.75 5.75 0 0010.75 16H21.44l-3.22 3.22a.75.75 0 101.06 1.06l4.5-4.5a.75.75 0 000-1.06l-4.5-4.5a.75.75 0 10-1.06 1.06L21.44 14.5H10.75A4.25 4.25 0 016.5 10.25v-1.5zM21.5 19.25a.75.75 0 001.5 0v-1.5A5.75 5.75 0 0017.25 12H6.56l3.22-3.22a.75.75 0 00-1.06-1.06l-4.5 4.5a.75.75 0 000 1.06l4.5 4.5a.75.75 0 001.06-1.06L6.56 13.5h10.69a4.25 4.25 0 014.25 4.25v1.5z" fill="var(--neutral-n26)"/></svg>
       </div>
       <h3>Consistent</h3>
       <p>Shared easing curves and duration tokens ensure every component feels like it belongs to the same system.</p>
     </div>
     <div class="card">
       <div class="icon-container icon-container--soft">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="var(--neutral-n26)"/></svg>
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 5.5a9.5 9.5 0 00-9.5 9.25.75.75 0 001.5.04 8 8 0 1116 .21.75.75 0 001.5-.04A9.5 9.5 0 0014 5.5zm-.47 3.97a.75.75 0 10-1.06 1.06l3 3a.75.75 0 101.06-1.06l-3-3zM8.25 16a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5zM11 20.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zm3 .75a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5zm6.25-5.5a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM18.25 21.5a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" fill="var(--neutral-n26)"/></svg>
       </div>
       <h3>Performant</h3>
       <p>Animations target 60fps, avoid layout thrashing, and use hardware-accelerated properties wherever possible.</p>
