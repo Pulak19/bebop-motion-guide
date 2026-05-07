@@ -195,7 +195,7 @@
   .card {
     background: #FFFFFF;
     border: none;
-    border-radius: var(--radius-composite-medium);
+    border-radius: 20px;
     padding: 32px;
     position: relative;
     overflow: hidden;
@@ -475,73 +475,31 @@
 <div class="page">
   <span class="page-num">02 / 04</span>
 
-  <span class="section-badge">
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1L1 5v6l7 4 7-4V5L8 1zm0 2.2L12.5 5.5 8 7.8 3.5 5.5 8 3.2zM2.5 6.3l5 2.8v4.6l-5-2.8V6.3zm11 0v4.6l-5 2.8V9.1l5-2.8z" fill="currentColor"/></svg>
-    Core Principles
-  </span>
-
-  <h2>Four pillars of Bebop motion</h2>
-  <p class="subtitle">A unified motion language adapted for Bebop's visual identity and component library.</p>
+  <h2>4 Principles of Bebop Motion</h2>
 
   <div class="grid-2">
     <div class="card">
       <div class="principle-num">01</div>
       <h3>Informative</h3>
       <p>Motion builds a spatial mental model. Transitions reveal where elements come from and where they go. The drawer slides from the left because that's where it lives. Snackbars enter from their anchored edge.</p>
-      <div class="mt-20">
-        <span class="tag tag--dark">Drawer slide-in</span>
-        <span class="tag tag--dark">Snackbar positioning</span>
-        <span class="tag tag--dark">Nav transitions</span>
-      </div>
-      <div class="example-box mt-16">
-        <p class="overline">Bebop Example</p>
-        <p style="font-size: 14px;"><strong>BebopDrawerScaffold</strong> — Drawer slides from the left edge via <code>animateFloatAsState</code> with <code>tween(250)</code>. A scrim fades proportionally to the drawer's progress, reinforcing the layered spatial model.</p>
-      </div>
     </div>
 
     <div class="card">
       <div class="principle-num">02</div>
       <h3>Focused</h3>
       <p>Animation draws the eye to what matters without creating distraction. Micro-interactions confirm user actions instantly. Larger transitions guide the eye smoothly during navigation context changes.</p>
-      <div class="mt-20">
-        <span class="tag tag--dark">Toggle thumb</span>
-        <span class="tag tag--dark">Button morph</span>
-        <span class="tag tag--dark">Search icon fade</span>
-      </div>
-      <div class="example-box mt-16">
-        <p class="overline">Bebop Example</p>
-        <p style="font-size: 14px;"><strong>BebopToggle</strong> — Thumb slides with <code>animateDpAsState(tween(200))</code>. Fast enough to feel responsive (200ms), slow enough for the eye to track the state change.</p>
-      </div>
     </div>
 
     <div class="card">
       <div class="principle-num">03</div>
       <h3>Expressive</h3>
       <p>Motion conveys personality. Spring physics add life to enter animations, while controlled tween exits keep departures crisp. The system feels alive but never chaotic or overanimated.</p>
-      <div class="mt-20">
-        <span class="tag tag--dark">Spring bouncy enter</span>
-        <span class="tag tag--dark">Content crossfade</span>
-        <span class="tag tag--dark">Scrim alpha ramp</span>
-      </div>
-      <div class="example-box mt-16">
-        <p class="overline">Bebop Example</p>
-        <p style="font-size: 14px;"><strong>BebopSearchBar</strong> — Filter chips appear with <code>spring(DampingRatioLowBouncy, StiffnessLow)</code> + <code>fadeIn(tween(350))</code>. A playful overshoot that settles naturally.</p>
-      </div>
     </div>
 
     <div class="card">
       <div class="principle-num">04</div>
       <h3>Consistent</h3>
-      <p>Shared timing tokens ensure similar interactions always feel identical. A fade-out is 150-250ms. An enter is 250-350ms. Same curves, same durations, same feel — across every component.</p>
-      <div class="mt-20">
-        <span class="tag tag--soft">Duration tokens</span>
-        <span class="tag tag--soft">Easing curves</span>
-        <span class="tag tag--soft">Pattern reuse</span>
-      </div>
-      <div class="example-box mt-16">
-        <p class="overline">Bebop Example</p>
-        <p style="font-size: 14px;"><strong>System-wide</strong> — Every slide+fade combo across Drawer, Snackbar, and SearchBar shares the same <code>tween</code> durations. Changing a token value updates the entire system at once.</p>
-      </div>
+      <p>Shared timing tokens ensure similar interactions always feel identical. A fade-out is 150–250ms. An enter is 250–350ms. Same curves, same durations, same feel — across every component.</p>
     </div>
   </div>
 
