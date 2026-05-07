@@ -356,7 +356,13 @@
   .footer span { font-size: 13px; color: var(--fg-placeholder); font-weight: 500; }
   .footer .logo-mark { display: flex; align-items: center; gap: 8px; }
 
-  @media (max-width: 640px) { .footer { flex-direction: column; gap: 8px; text-align: center; } }
+  @media (max-width: 640px) {
+    .footer { flex-direction: column; gap: 8px; text-align: center; }
+    .code-block { font-size: 11px; padding: 16px; }
+    .token-table { display: block; overflow-x: auto; }
+    .subtitle { max-width: 100%; }
+    .callout { margin: 24px 0; }
+  }
 
   /* ─── Helpers ─── */
   .flex-between { display: flex; justify-content: space-between; align-items: flex-start; }
