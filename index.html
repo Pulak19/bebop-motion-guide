@@ -200,6 +200,12 @@
     position: relative;
     overflow: hidden;
     box-shadow: 0 1px 4px rgba(0,0,0,0.04), 0 2px 8px rgba(0,0,0,0.02);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+  }
+
+  .card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.04);
+    transform: scale(1.03);
   }
 
   .card-dark {
@@ -450,10 +456,6 @@
       <h3>Performant</h3>
       <p>Animations target 60fps, avoid layout thrashing, and use hardware-accelerated properties wherever possible.</p>
     </div>
-  </div>
-
-  <div class="callout mt-40">
-    <p><em>"Motion helps make a UI expressive and easy to use. It guides users between navigational contexts, explains changes in the arrangement of elements on a screen, and reinforces element hierarchy."</em></p>
   </div>
 
   <div class="footer">
